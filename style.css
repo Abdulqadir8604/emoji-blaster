@@ -1,0 +1,65 @@
+ /* this code is to make changes in the background */
+body{
+    margin: 5;
+    height:0;
+    background-color: rgb(241, 168, 168);
+    overflow: hidden;
+  }
+
+/* this code is to make appear your choice of image and animate it */  
+  span{
+    /*heart icon: "https://cdn4.iconfinder.com/data/icons/set-1/32/__1-512.png"*/
+    /*i love you icon: "https://cdn2.iconfinder.com/data/icons/valentine-s-day-and-love-ii/131/Stickers_I-06-10-512.png"*/
+    /*smiley icon: "https://cdn4.iconfinder.com/data/icons/smileys-for-fun/128/smiley__18-256.png"*/
+
+    background: url("https://cdn4.iconfinder.com/data/icons/set-1/32/__1-512.png"); /* this is the image you want to make appear, you can change it by adding image of ur choice by "copy image address", iconfinder.com is recommended*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 20s linear ;
+  }
+
+  div{
+    position: absolute;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    left: 50%;
+    top: 50%;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: txtAnimate 30s linear;
+  }
+
+
+  /*below is the animation, if u know something about animations u can make changes as per your choice*/
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      filter: hue-rotate(0deg);
+    }
+    75% {
+      opacity: 0.1;
+    }
+    100% {
+      transform: translate(-50%, -5000%);
+      opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+  }
+  @keyframes txtAnimate {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, 5000%);
+        opacity: 0;
+      }
+  }
