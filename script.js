@@ -50,7 +50,7 @@ if (is_touch_enabled()) {
         document.body.appendChild(emoSpanEl);
         setTimeout(function() {
             emoSpanEl.remove();
-        }, 7000);
+        }, 10000);
 
         //below code is optional if you want to add text you can remove it if you want
         var txtSpanEl = document.createElement('div');
@@ -66,7 +66,7 @@ if (is_touch_enabled()) {
         document.body.appendChild(txtSpanEl);
         setTimeout(function() {
             txtSpanEl.remove();
-        }, 7000);
+        }, 10000);
         //end of optional code
 
         });
