@@ -12,12 +12,9 @@ if (is_touch_enabled()) {
         emoSpanEl.style.width = math*50 + 'px';
         emoSpanEl.style.height = math*50 + 'px';
         document.body.appendChild(emoSpanEl);
-        let now = Date.now(),
-        end = now + 2000;
-        while (now < end) { now = Date.now(); }
         setTimeout(function() {
             emoSpanEl.remove();
-        }, 7000);
+        }, 10000);
 
         //below code is optional if you want to add text you can remove it if you want
         var txtSpanEl = document.createElement('div');
